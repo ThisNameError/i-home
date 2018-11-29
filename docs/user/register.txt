@@ -1,0 +1,23 @@
+请求：
+POST /ihome/register/
+
+请求参数：
+tel str 手机号
+pwd str 密码
+owd2 str 确认密码
+
+响应：
+
+成功响应：
+{‘code’: 200, 'msg': '请求成功'}
+
+失败响应：
+{'code': 1001, 'msg': '请重新输入信息'}
+{'code': 1002, 'msg': '请输入正确的手机号'}
+{'code': 1003, 'msg': '手机号已注册，请换手机号注册'}
+{'code': 1004, 'msg': '两次密码不一致，请重新输入密码'}
+
+响应参数：
+phone str 手机号
+passwd str 密码
+passwd2 str 确认密码

@@ -1,0 +1,19 @@
+请求：
+POST /ihome/login/
+
+请求参数：
+tel str 手机号
+pwd str 登录密码
+
+响应：
+
+成功响应：
+{'code': 200, 'msg': '请求成功'}
+
+失败响应：
+{'code': 2001, 'msg': '手机号不存在，请先注册'}
+{'code': 2002, 'msg': '密码不正确'}
+
+响应参数：
+phone str 手机号
+passwd str 密码
